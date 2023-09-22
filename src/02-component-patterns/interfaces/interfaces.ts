@@ -12,7 +12,11 @@ export interface ProductContextProps{
     handleCont: (num:number)=>void;
     product: Product;
 }
+export interface onChangeArgs{
+    product: Product;
+    count:number;
+}
 
-export interface ProductCardHOCProps{
-    
+export interface ProductInCart extends Product{
+    count: number;
 }
