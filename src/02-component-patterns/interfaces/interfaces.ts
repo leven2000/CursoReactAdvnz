@@ -1,9 +1,5 @@
 import { ReactElement } from "react";
 
-export interface ProductCardProps{
-    children?: ReactElement | ReactElement[];
-    product: Product;
-}
 
 export interface Product{
     id:string;

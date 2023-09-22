@@ -1,10 +1,19 @@
 
 import {ProductContext} from "./ProductCard";
-import { useContext } from "react";
+import { CSSProperties, useContext } from "react";
 import styles from "../styles/styles.module.css";
 import  noImage  from "../assets/no-image.jpg";
 
-export const ProductTitle = ({title = ""}) =>{
+
+export interface Props{
+    title?: string;
+    className?: string;
+    style?: CSSProperties; 
+}
+
+
+export const ProductTitle = ({title, className, style}:Props) =>{
+
     const {product} = useContext(ProductContext);
 
     let titleToShow: string;
@@ -16,6 +25,6 @@ export const ProductTitle = ({title = ""}) =>{
     }
 
     return(
-        <span className={styles.productDescription}>{titleToShow}</span>
+        <span className={`${styles.productDescription} ${className}`} style={style}>{titleToShow}</span>
     )
 }
