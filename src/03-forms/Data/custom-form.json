@@ -1,0 +1,30 @@
+[
+    {
+        "type": "input",
+        "name": "firstName",
+        "placeholder": "Fernando",
+        "label": "First Name",
+        "value": ""
+    },
+    {
+        "type": "input",
+        "name": "lastName",
+        "placeholder": "Juan",
+        "label": "Last Name",
+        "value": ""
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "email",
+        "label": "email",
+        "value": ""
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite Game",
+        "value": "",
+        "options": ["CSGO","FAFI","GTA"]
+    }
+]
